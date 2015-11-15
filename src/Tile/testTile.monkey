@@ -63,7 +63,7 @@ Class GameScreen Extends Screen
 	Method Start:Void()
 		diddyGame.images.LoadAnim("tileslostgarden.png", 20, 20, 21, Null, True, False)	
 		Local reader:MyTiledTileMapReader = New MyTiledTileMapReader
-		Local tm:TileMap = reader.LoadMap(LoadString("maps/WrapMap.xml"))
+		Local tm:TileMap = reader.LoadMap(LoadString("maps/map.xml"))
 		tilemap = MyTileMap(tm)
 	End
 	
