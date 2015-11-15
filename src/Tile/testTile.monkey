@@ -8,6 +8,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Strict
 
 Import diddy
+Import diddy.tile.diddyreader
 
 Function Main:Int()
 	New MyGame
@@ -62,7 +63,7 @@ Class GameScreen Extends Screen
 	Method Start:Void()
 		diddyGame.images.LoadAnim("tileslostgarden.png", 20, 20, 21, Null, True, False)	
 		Local reader:MyTiledTileMapReader = New MyTiledTileMapReader
-		Local tm:TileMap = reader.LoadMap(LoadString("maps/WrapMap.xml"))
+		Local tm:TileMap = reader.LoadMap(LoadString("maps/map.xml"))
 		tilemap = MyTileMap(tm)
 	End
 	
@@ -102,7 +103,7 @@ Class GameScreen Extends Screen
 End
 
 
-Class MyTiledTileMapReader Extends TiledTileMapReader
+Class MyTiledTileMapReader Extends DiddyTiledTileMapReader
 	Method CreateMap:TileMap()
 		Return New MyTileMap
 	End
