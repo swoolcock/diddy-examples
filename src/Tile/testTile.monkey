@@ -8,6 +8,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Strict
 
 Import diddy
+Import diddy.tile.diddyreader
 
 Function Main:Int()
 	New MyGame
@@ -102,7 +103,7 @@ Class GameScreen Extends Screen
 End
 
 
-Class MyTiledTileMapReader Extends TiledTileMapReader
+Class MyTiledTileMapReader Extends DiddyTiledTileMapReader
 	Method CreateMap:TileMap()
 		Return New MyTileMap
 	End
