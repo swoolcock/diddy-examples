@@ -31,16 +31,16 @@ Class MyGame Extends DiddyApp
 	
 	Method LoadImages:Void()
 		images.Load("Ship1.png")
-		diddyGame.loadingScreen.loadingBar.Progress()
+		diddyGame.loadingScreen.Progress()
 		
 		images.Load("sprites.png")
-		diddyGame.loadingScreen.loadingBar.Progress()
+		diddyGame.loadingScreen.Progress()
 
 		images.Load("zombie_0.png")
-		diddyGame.loadingScreen.loadingBar.Progress()
+		diddyGame.loadingScreen.Progress()
 
 		images.Load("libgdx_sprites.png")
-		diddyGame.loadingScreen.loadingBar.Progress()
+		diddyGame.loadingScreen.Progress()
 	End
 End
 
