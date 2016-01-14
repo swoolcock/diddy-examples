@@ -6,8 +6,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #End
 
 Import diddy
+Import diddy.tile.diddyreader
 
-Class MyTiledTileMapReader Extends TiledTileMapReader
+Class MyTiledTileMapReader Extends DiddyTiledTileMapReader
 	Method CreateMap:TileMap()
 		Return New MyTileMap
 	End
